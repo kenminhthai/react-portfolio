@@ -1,0 +1,293 @@
+@import "./scss/variables/variables";
+@import "./scss/mixins/mixins";
+@import "./scss/grid/grid";
+@import "./scss/partials/helpers";
+@import "./scss/partials/icons";
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+
+  @media (min-width: 381px) {
+    font-size: 16px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: $sans-text;
+  color: $dark;
+  background: #fff;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+#root {
+  min-height: 100vh;
+  max-width: 100%;
+}
+
+
+a {
+  color: darken($color1, 20%);
+
+  &:hover {
+    color: darken($color2, 20%);
+  }
+
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#main {
+  display: block;
+  //margin-top: 60px;
+}
+.svg-defs {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $sans-title;
+  text-transform: uppercase;
+}
+
+p {
+  line-height: 1.6;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.App {
+  //text-align: center;
+}
+
+
+.App-logo {
+  //animation: App-logo-spin infinite 20s linear;
+  display: block;
+  float: left;
+  width: 200px;
+  height: 50px;
+  //margin-left: 10px;
+  padding: 5px;
+  line-height: 40px;
+  background: $dark;
+  transform: skew(-15deg);
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.5);
+  transition: all 300ms ease;
+  position: relative;
+  z-index: 11;
+
+  img {
+    display: inline-block;
+    margin: auto;
+    max-width: 100%;
+    heigth: auto;
+  }
+
+  &:hover {
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.5);
+  }
+
+  body[data-theme="black-and-white"] &{
+    background: $dark;
+  }
+}
+
+.App-header {
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  z-index: 10;
+  height: 75px;
+  transition: background 200ms ease;
+
+  &--scrolled {
+    background: #fff;
+  }
+
+  &__inner {
+    width: calc(100% - #{$hero-frame-width-small-screens * 2}px);
+    @media (min-width: 1024px) {
+      max-width: calc(100% - #{$hero-frame-width * 2}px);
+    }
+    margin: auto;
+  }
+
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.title__h1 {
+  font-size: 3rem;
+  margin: 0 auto 1rem auto;
+  letter-spacing: 2px;
+  color: $dark;
+
+}
+
+.title__h3 {
+  font-size: 1.6rem;
+  margin: 0 auto 1rem auto;
+  letter-spacing: 2px;
+  color: $dark;
+}
+
+.section-wrapper {
+  padding-bottom: 30px;
+  transform: translateY(0) scale(1);
+  transition: all 500ms ease-in-out;
+  margin: 0 auto;
+  min-height: calc(100vh - #{$hero-frame-width-small-screens * 2}px);
+
+  + .section-wrapper {
+    padding: 30px 0;
+    margin: 0 auto #{$hero-frame-width-small-screens}px auto;
+  }
+
+    @media (min-width: 1024px) {
+      min-height: calc(100vh - #{$hero-frame-width * 2}px);
+      margin: 0 auto #{$hero-frame-width}px auto;
+    }
+  
+}
+
+.site-description {
+  margin-top: -80px;
+  margin-bottom: 60px;
+  color: #fff;
+  font-size: 1.1rem;
+  position: relative;
+  z-index: 1;
+  background: $dark;
+  transform: skew(0deg, -5deg);
+
+  &__inner {
+    padding: 60px 0 70px 0;
+    transform: skew(0deg, 5deg);
+  }
+
+
+  &__content {
+    padding: 0 1rem;
+
+    @media (min-width: 768px) {
+      padding: 0;
+    }
+  }
+
+}
+
+// Image loading
+.imageLoading {
+  background: $color1;
+  width: 100%;
+  padding-top: ((488 / 1560) * 100 ) *1%;
+  position: relative;
+
+  .loader {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -30px;
+    margin-left: -30px;
+    background: $dark;
+    border-radius: 50%;
+    animation: loader 1000ms infinite ease;
+  }
+}
+
+
+.section-wrapper__header {
+  text-align: center;
+}
+
+body:not([data-page-type="Home"]) .section-wrapper__header {
+  height: 40vh;
+  min-height: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  //background: linear-gradient(135deg, $color1 0, $color3 100%);
+  background: linear-gradient(135deg, $color1 0, $color2 100%), url('/media/css-images/bg-image5.jpeg') no-repeat center fixed;
+  background-size: cover;
+  background-blend-mode: color;
+
+  .title__h1 {
+    transform: translateX(4000px);
+    transition: all 500ms ease;
+    color: #fff;
+  }
+  .section-wrapper__header__subtitle {
+    padding: 0 15px;
+    opacity: 0;
+    font-size: 1.3rem;
+    transition: all 500ms ease;
+    transition-delay: 700ms;
+  }
+
+}
+
+// Transitions
+body:not([data-page-type="Home"]) .section-wrapper.in .title__h1,
+body:not([data-page-type="Home"]) .section-wrapper.in .section-wrapper__header__subtitle {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+
+// Animations
+
+@keyframes loader {
+  50% {
+    transform: scale(0.1);
+  }
+}
+
+// End of transitions
+
+// Partials
+@import "./scss/partials/buttons";
+@import "./scss/partials/cards";
+
+// Components
+@import "components/hero/hero";
+@import "components/footer/footer";
+@import "components/navigation/navigation";
+@import "components/portfolio/portfolio";
+@import "components/portfolio-project/portfolio-project";
+@import "components/about/about";
+@import "components/skills/skills";
+@import "components/scrollToTop/scroll-to-top";

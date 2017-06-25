@@ -1,0 +1,86 @@
+{
+    "intro": {
+      "title": "Title Lorem Ipsum",
+      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipisicing.",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aperiam atque culpa deleniti dolores, doloribus eaque illo iste labore laborum magni nemo odio officiis omnis optio praesentium provident quae rerum saepe sit, tempora tempore velit veniam vero?"
+    },
+    "info": {
+      "firstname": "Georges",
+      "lastname": "Doe",
+      "date_of_birth": "1986/03/09",
+      "profession": [
+        "Front-end developer",
+        "UX Designer"
+      ]
+    },
+    "address": {
+      "street": "7634, Rue des routes",
+      "city": "Montréal",
+      "ZIP": "HB3EN2",
+      "province": "Québec",
+      "country": "Canada",
+      "email": "georgedoe@email.com",
+      "phone": "514-555-5555"
+    },
+    "resume": {
+      "title": "Résumé",
+      "text": "lorem Ipsum"
+    },
+    "skills":{
+      "technos": {
+        "Javascript": {
+            "percent": 81,
+            "libraries": [
+              {"name":"ES6", "logo": "./media/resume/libraries-logos/es6-logo.png", "percent": 80, "category": "specification"},
+              {"name": "React","logo": "./media/resume/libraries-logos/react.svg", "percent": 80, "category": "framework"},
+              {"name": "Redux", "logo": "./media/resume/libraries-logos/redux-logo.svg", "percent": 50, "category": "framework"},
+              {"name": "jQuery", "logo": "./media/resume/libraries-logos/jQuery-logo.gif", "percent": 95, "category": "library"},
+              {"name": "NodeJs", "logo": "./media/resume/libraries-logos/nodejs-logo.png", "percent": 70, "category": "framework"},
+              {"name": "Gulp", "logo": "./media/resume/libraries-logos/gulp-1.svg", "percent": 90, "category": "framework"},
+              {"name": "Webpack", "logo": "./media/resume/libraries-logos/webpack-logo.png", "percent": 70, "category": "Module Bundler"},
+              {"name": "Nunjucks", "logo": "./media/resume/libraries-logos/nunjucks.png", "percent": 97, "category": "framework"},
+              {"name": "Jade (Pug)", "logo": "./media/resume/libraries-logos/pug.svg", "percent": 97, "category": "framework"},
+              {"name":"Angular", "logo" : "./media/resume/libraries-logos/angular-icon-1.svg", "percent": 60, "category": "framework"},
+              {"name":"Gsap", "logo": "./media/resume/libraries-logos/gsap-logo.png", "percent": 90, "category": "framework"}
+            ]
+        },
+        "Css": {
+            "percent": 96,
+            "libraries": [
+              {"name": "Sass","logo": "./media/resume/libraries-logos/sass-1.svg", "percent": 95, "category": "framework"},
+              {"name": "Less","logo": "./media/resume/libraries-logos/less.svg", "percent": 98, "category": "framework"}
+            ]
+
+        },
+        "Html5": {
+            "percent": 96,
+            "libraries": [
+              {"name": "HTML5", "logo": "./media/resume/libraries-logos/html5.svg", "percent": 98, "category": null},
+              {"name":"Accessibility", "logo": "./media/resume/libraries-logos/accessibility_icon.png", "percent": 80, "category": null}
+            ]
+        }
+      },
+      "generalSkills": {
+          "Wordpress": {
+              "percent": 70,
+              "infos": ["Theme development", "Plugin development"]
+          },
+          "Php": {
+              "percent": 50,
+              "infos": ["Symfony", "composer", "Twig"]
+          }
+      },
+      "CMS": ["Wordpress","EZpublish","Magento", "Drupal", "Joomla", "Drupal", "Liferay"],
+      "haveWorkedWith": ["Docker", "Composer", "Twig"],
+      "softs": {
+        "Photoshop": {
+          "percent": 96,
+          "logo": "./media/resume/libraries-logos/photoshop-cc.svg"
+        },
+        "Illustrator": {
+          "percent": 90,
+          "logo": "./media/resume/libraries-logos/adobe-illustrator-cc.svg"
+        }
+      }
+    }
+}

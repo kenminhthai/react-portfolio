@@ -1,0 +1,25 @@
+// Helpers
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.hidden-desktop {
+  @media(min-width: 1025px) {
+    display: none !important;
+  }
+}
+
+.hidden-mobile {
+  @media (max-width: 1024px) {
+    display: none !important;
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "title": "React portfolio",
+  "title_separator": "|",
+  "subtitle": "React portfolio boilerplate",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores dicta ex fuga minima numquam omnis quam saepe. A alias aliquid animi aspernatur cumque distinctio dolor doloribus enim eveniet fugiat libero molestias natus necessitatibus, neque nihil, nobis obcaecati officia omnis praesentium qui rem repellendus rerum sed sint, temporibus vel velit voluptas. Excepturi iure pariatur quis quo soluta sunt temporibus ullam?",
+  "description_title": "Lorem Ipsum",
+  "description_image": "http://via.placeholder.com/768x480",
+  "footer": {
+    "copyright_text": "Copyright 2017 - Simon Patrat"
+  }
+}

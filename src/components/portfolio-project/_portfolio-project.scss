@@ -1,0 +1,253 @@
+.portfolio__project__wrapper, .section-wrapper.portfolio__project__wrapper {
+  padding-top: 0;
+  padding-bottom: 0;
+  background: #fff;
+  color: $dark;
+
+  body[data-theme="black-and-white"] & {
+    color: $dark;
+  }
+}
+
+
+.portfolio__project__description__group {
+  text-align: center;
+  padding: 0;
+
+  .portfolio__project__description-block__title {
+    color: $dark !important;
+    text-shadow: none !important;
+
+    body[data-theme="black-and-white"] & {
+      color: $dark !important;
+    }
+
+    &__title--main {
+      font-size: 2.6rem;
+      margin: 1rem auto;
+      font-family: $sans-title;
+      font-weight: 900;
+      color: $dark;
+    }
+
+    .categories {
+      .cat-name {
+        display: inline-block;
+        margin: 10px 5px 0 5px;
+        font-size: 0.75rem;
+        background: lighten($dark, 40%);
+        color: #fff;
+        padding: 3px 8px;
+        opacity: 1;
+      }
+    }
+
+  }
+}
+.portfolio__project__description-block {
+  padding: 15px;
+
+  &__content {
+    text-align: left;
+
+    .block {
+      padding: 10px;
+    }
+
+    &__tech-list {
+      list-style: none;
+      padding: 30px 0 15px 0;
+      margin: 0;
+
+      &__item {
+        display: inline-block;
+        margin: 3px 6px;
+      }
+    }
+
+    &__description {
+      padding: 15px 0 30px 0;
+      font-size: 1rem;
+      color: #565656;
+    }
+  }
+}
+
+.portfolio__project__text-block {
+  padding: 30px 0;
+}
+
+.portfolio__project__image-block {
+  margin: 0 auto;
+  padding: 80px;
+
+  &:first-child {
+    padding-top: 0;
+  }
+
+  &:nth-child(2n) {
+    background: $dark;
+
+    body[data-theme="black-and-white"] & {
+      background: $dark;
+    }
+  }
+
+  img {
+    margin: auto;
+  }
+}
+
+
+.portfolio__project__nav {
+  nav {
+    display: flex;
+    flex-flow: row wrap;
+    flex-grow: 1;
+  }
+}
+
+.portfolio__project__wrapper__project {
+  position: relative;
+}
+
+a.back-to-portfolio-link {
+  display: block;
+  font-size: 30px;
+  color: desaturate(lighten($dark, 70%), 10%);
+  margin: 5px;
+  padding: 5px;
+
+  &--close-project {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #fff !important;
+    font-size: 24px;
+  }
+}
+
+.project__featured-image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.project__featured-image {
+  transition: opacity 700ms ease-in, transform 200ms ease-out 600ms;
+}
+
+.project-nav__link {
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 100%;
+  line-height: 100%;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 200;
+  color: #fff;
+  text-decoration: none;
+  transition: all 200ms ease;
+  overflow: hidden;
+
+  @media (min-width: 1024px) {
+    width: 200px;
+  }
+
+  &:hover {
+    background: rgba($dark, 0.4);
+  }
+
+  &__thumb {
+    display: none;
+
+    @media (min-width: 1024px) {
+      display: block;
+      width: 100px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: 30px;
+      margin-left: -50px;
+      background: #fff;
+      border: 5px solid #fff;
+      z-index: 2;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(10px);
+      transition: all 300ms ease;
+
+      .project-nav__link:hover & {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+    }
+  }
+
+  &--prev {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  &--next {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+
+  &__icon {
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 60px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    margin-top: -30px;
+    margin-left: -30px;
+    color: #fff;
+    transition: all 200ms ease-in;
+
+    .project-nav__link:hover & {
+      transform: scale(0.6);
+    }
+  }
+
+  &__title {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%) translateX(-100%);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    padding: 10px;
+    transition: all 220ms ease-in;
+
+    @media (min-width: 1024px) {
+      display: block;
+    }
+
+    @media (min-width: 1480px) {
+      top: 40%;
+    }
+
+    .project-nav__link--prev & {
+      transform: translateY(-50%) translateX(-100%);
+    }
+
+    .project-nav__link--next & {
+      transform: translateY(-50%) translateX(100%);
+    }
+
+    .project-nav__link:hover & {
+      transform: translateY(-50%) translateX(0);
+    }
+  }
+
+}

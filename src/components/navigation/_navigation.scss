@@ -1,0 +1,241 @@
+// Navigation
+
+.navmenu {
+  float: right;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-end;
+
+  &__link {
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    padding: 16px;
+    letter-spacing: 2px;
+    color: $dark;
+    text-decoration: none;
+    transition: all 200ms ease;
+    font-weight: 700;
+
+    &:after {
+      content: '';
+      height: 2px;
+      width: 50%;
+      margin: 0 auto;
+      position: absolute;
+      bottom: 0;
+      left: 25%;
+      right: 25%;
+      transform: scaleX(0);
+      transition: all 300ms ease;
+      background: darken($color1, 10%);
+    }
+
+    &:hover {
+      color: darken($color1, 10%);
+
+      &:after {
+        transform: scaleX(1);
+      }
+    }
+
+    &.active {
+      color: $dark;
+      &:after {
+        transform: scaleX(1);
+        background: $dark;
+      }
+
+      &:hover {
+        color: darken($color2, 50%);
+
+        &:after {
+          background: darken($color2, 40%);
+        }
+      }
+    }
+
+    &.theme-select-li {
+      padding: 6px;
+      &:after {
+        display: none;
+      }
+
+      button {
+        background: $dark;
+        border: none;
+        color: $dark;
+        height: 30px;
+        width: 30px;
+        line-height: 1;
+        cursor: pointer;
+        font-size: 1rem;
+      }
+
+
+    }
+  }
+
+  @media (max-width: 1024px) {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba($dark, 0.95);
+    transform-origin: left;
+    transform: scale(1) translateX(-100%);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 300ms ease;
+
+    &__link {
+      font-size: 1.3rem;
+      color: #fff;
+
+      &.active {
+        color: $color1;
+      }
+    }
+
+    &--mobile-open {
+      transform: scale(1) translateX(0);
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+}
+
+.navmenu__link__dropdown {
+  position: relative;
+
+  &__list {
+    position: absolute;
+    top: 100%;
+    left:50%;
+    list-style: none;
+    transform: translateX(-50%) translateY(0) scaleY(0);
+    transform-origin: top;
+    background: darken($dark, 10%);
+    min-width: 40px;
+    text-align: center;
+    margin-top: 6px;
+    padding: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 300ms ease-in-out;
+
+
+    li {
+      padding: 0;
+      a {
+        display: block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        color: #fff;
+      }
+    }
+  }
+
+  &:hover {
+    .navmenu__link__dropdown__list {
+      transform: translateX(-50%) translateY(0) scaleY(1);
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+
+.btn--navmenu, .btn.btn--navmenu {
+  width: 30px;
+  height: 20px;
+  padding: 0;
+  display: flex;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  border: none;
+  outline: none;
+
+  &__bar {
+    height: 2px;
+    width: 100%;
+    background: $dark;
+
+    &:nth-child(2), &:nth-child(4) {
+      width: 80%;
+    }
+
+  }
+
+  &[aria-expanded="true"] {
+    .btn--navmenu__bar {
+      transition: top 300ms 300ms ease, transform 300ms cubic-bezier(0.165, 0.84, 0.44, 1), background 300ms ease 600ms;
+      position: relative;
+      background: #fff;
+      &:nth-child(2) {
+        top: calc(50% - 2px);
+        transform: rotate3d(0, 0, 1, 45deg) scale(1.1);
+      }
+
+      &:nth-child(3) {
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: all 200ms ease;
+      }
+
+      &:nth-child(4) {
+        top: calc(-50% - 1px);;
+        transform: rotate3d(0, 0, 1, -45deg) scale(1.1);
+      }
+
+    }
+  }
+
+}
+
+.navmenu__tooltip {
+  position: absolute;
+  width: 100%;
+  min-width: 140px;
+  background: $dark;
+  margin: 0 auto;
+  color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  text-transform: none;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  padding: 15px;
+  font-weight: normal;
+
+  &--bottom {
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(30px);
+  }
+}
+
+.navmenu__link:hover {
+  .navmenu__tooltip {
+    visibility: visible;
+    opacity: 1;
+    transition: all 300ms ease;
+    transform: translateX(-50%) translateY(0);
+  }
+}

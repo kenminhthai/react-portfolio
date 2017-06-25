@@ -1,0 +1,29 @@
+// Buttons
+
+.btn, a.btn {
+  border: none;
+  display: inline-block;
+  color: #fff;
+  padding: 10px 12px;
+  text-transform: uppercase;
+  font-weight: 200;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-decoration: none;
+
+  &--project-link {
+    box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.4);
+
+    body[data-theme="light-red"] &,
+    body[data-theme="dark-red"] & {
+      background: $dark;
+      color: #fff;
+      &:hover {
+        background: lighten($dark, 5%);
+        color: #fff;
+      }
+    }
+
+  }
+}

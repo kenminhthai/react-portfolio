@@ -1,0 +1,120 @@
+// Skills
+
+.skill {
+  body[data-theme="black-and-white"] & {
+    color: $dark;
+  }
+}
+
+.skill-list {
+  &__item {
+
+    .skill-bar {
+      height: 10px;
+
+      &__percent {
+        height: 10px;
+      }
+    }
+
+    .category-logo {
+      transform: scale(1);
+      transition: all 300ms ease;
+      width: 40px;
+      height: 40px;
+      &.in {
+        animation: skillLogoAnimation 700ms ease;
+      }
+
+      img {
+        max-height: 100%;
+        height: 100%;
+      }
+    }
+    &:hover {
+      .category-logo, .category-logo.in {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+.skill-row {
+  margin-left: 10px;
+  + .skill-row {
+    margin-top: 40px;
+  }
+}
+
+.skill-bar {
+  width: 100%;
+  height: 15px;
+  background: #eee;
+  position: relative;
+  overflow: hidden;
+
+  &__percent {
+    transform-origin: left;
+    height: 15px;
+    margin-left: -1px;
+    width: 100%;
+    background: $dark;
+    transform: scaleX(0);
+    transition: all 700ms ease-in-out;
+
+
+
+    &--sub-category {
+      background: $dark;
+    }
+  }
+}
+
+.cv-block {
+
+  &__content {
+    margin-top: 15px;
+  }
+
+  &--skills {
+    @extend .row;
+  }
+
+  &--address {
+    .address-part {
+      font-size: 1rem;
+      line-height: 1.7rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+  }
+
+}
+
+.cv-block + .cv-block {
+  margin-top: 30px;
+}
+
+
+.cv-block__icon {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 40px;
+  color: $dark;
+
+}
+
+@keyframes skillLogoAnimation {
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes skillLogoAnimation2 {
+  50% {
+    transform: scale(1.2);
+  }
+}

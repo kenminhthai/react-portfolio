@@ -1,0 +1,247 @@
+{
+  "title": "Work",
+  "description": "A selection of my personal projects",
+  "categories": ["Web", "Dev", "Design"],
+  "projects": [
+    {
+      "title": "Project Lorem Ipsum",
+      "slug": "project-lorem-ipsum",
+      "date": 2016,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, ratione.",
+      "client": "The Client",
+      "link": "http://www.google.com",
+      "categories": [
+        "Web",
+        "Dev"
+      ],
+      "technologies": [
+        "HTML",
+        "Css",
+        "Less",
+        "Javascript",
+        "PHP",
+        "Wordpress"
+      ],
+      "images": {
+        "featured_small": "https://source.unsplash.com/collection/490175/768x480",
+        "featured_big": "https://source.unsplash.com/collection/490175/1920x600",
+        "project_images":[
+          "https://source.unsplash.com/collection/490175/1024x768",
+          "https://source.unsplash.com/collection/490175/1280x768",
+          "https://source.unsplash.com/collection/490175/1024x768"
+        ]
+      }
+    },{
+    "title": "Project 2",
+    "slug": "project-2",
+    "date": 2015,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, commodi fuga magni maxime neque numquam pariatur quisquam repellat sed totam.",
+    "client": null,
+    "link": "http://www.google.com",
+    "categories": [
+      "Web",
+      "Dev"
+    ],
+    "technologies": [
+      "HTML5",
+      "Bootstrap 3",
+      "Less",
+      "Javascript",
+      "jQuery"
+    ],
+      "images": {
+        "featured_small": "https://source.unsplash.com/collection/168902/768x480",
+        "featured_big": "https://source.unsplash.com/collection/168902/1920x600",
+        "project_images":[
+          "https://source.unsplash.com/collection/168902/1024x768",
+          "https://source.unsplash.com/collection/168902/1280x768",
+          "https://source.unsplash.com/collection/168902/1024x768"
+        ]
+      }
+  },{
+    "title": "Project 3",
+    "slug": "project-3",
+    "date": 2015,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, commodi fuga magni maxime neque numquam pariatur quisquam repellat sed totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, commodi fuga magni maxime neque numquam pariatur quisquam repellat sed totam.",
+    "client": "The client",
+    "link": "http://www.google.com",
+    "github": "https://github.com",
+    "categories": [
+      "Web",
+      "Dev",
+      "Design"
+    ],
+    "technologies": [
+      "HTML5",
+      "LESS",
+      "jQuery"
+    ],
+      "images": {
+        "featured_small": "https://source.unsplash.com/collection/195939/768x480",
+        "featured_big": "https://source.unsplash.com/collection/195939/1920x600",
+        "project_images":[
+          "https://source.unsplash.com/collection/195939/1024x768",
+          "https://source.unsplash.com/collection/195939/1280x768",
+          "https://source.unsplash.com/collection/195939/1024x768"
+        ]
+      }
+  },{
+    "title": "Project 4 Lorem Ipsum Title",
+    "slug": "project-4-lorem-ipsum-title",
+    "date": 2015,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, commodi fuga magni maxime neque numquam pariatur quisquam repellat sed totam.",
+    "client": "The client",
+    "link": "http://www.google.ca",
+    "categories": [
+      "Web",
+      "Dev"
+    ],
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "jQuery"
+    ],
+      "images": {
+        "featured_small": "https://source.unsplash.com/collection/766207/768x480",
+        "featured_big": "https://source.unsplash.com/collection/766207/1920x600",
+        "project_images":[
+          "https://source.unsplash.com/collection/766207/1024x768",
+          "https://source.unsplash.com/collection/766207/1280x768",
+          "https://source.unsplash.com/collection/766207/1024x768"
+        ]
+      }
+  }, {
+      "title": "Project 5",
+      "slug": "project-5",
+      "date": 2014,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, commodi fuga magni maxime neque numquam pariatur quisquam repellat sed totam.",
+      "client": "The Client",
+      "link": "http://www.google.ca",
+      "categories": [
+        "Web",
+        "Dev",
+        "Design"
+      ],
+      "technologies": [
+        "Wordpress",
+        "Less",
+        "Javascript"
+      ],
+      "images": {
+        "featured_small": "https://source.unsplash.com/collection/273745/768x480",
+        "featured_big": "https://source.unsplash.com/collection/273745/1920x600",
+        "project_images":[
+          "https://source.unsplash.com/collection/273745/1024x768",
+          "https://source.unsplash.com/collection/273745/1280x768",
+          "https://source.unsplash.com/collection/273745/1024x768"
+        ]
+      }
+    },{
+      "title": "Project 6",
+      "slug": "project-6",
+      "date": 2014,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, commodi fuga magni maxime neque numquam pariatur quisquam repellat sed totam.",
+      "client": "Les Usines Nouvelles",
+      "link": "http://www.google.ca",
+      "categories": [
+        "Web",
+        "Dev",
+        "Design"
+      ],
+      "technologies": [
+        "Wordpress",
+        "HTML",
+        "Css",
+        "Javascript - jQuery"
+      ],
+      "images": {
+        "featured_small": "https://source.unsplash.com/collection/195845/768x480",
+        "featured_big": "https://source.unsplash.com/collection/195845/1920x600",
+        "project_images":[
+          "https://source.unsplash.com/collection/195845/1024x768",
+          "https://source.unsplash.com/collection/195845/1280x768",
+          "https://source.unsplash.com/collection/195845/1024x768"
+        ]
+      }
+    },{
+      "title": "Project 7",
+      "slug": "project-7",
+      "date": 2013,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, commodi fuga magni maxime neque numquam pariatur quisquam repellat sed totam.",
+      "client": "The client",
+      "link": "http://www.google.ca",
+      "categories": [
+        "Web",
+        "Dev"
+      ],
+      "technologies": [
+        "Wordpress",
+        "Sass",
+        "Javascript - jQuery"
+      ],
+      "images": {
+        "featured_small": "https://source.unsplash.com/collection/277/768x480",
+        "featured_big": "https://source.unsplash.com/collection/277/1920x600",
+        "project_images":[
+          "https://source.unsplash.com/collection/277/1024x768",
+          "https://source.unsplash.com/collection/277/1280x768",
+          "https://source.unsplash.com/collection/277/1024x768"
+        ]
+      }
+    },{
+      "title": "Project 8",
+      "slug": "project-8",
+      "date": 2013,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, commodi fuga magni maxime neque numquam pariatur quisquam repellat sed totam.",
+      "client": "The client",
+      "link": "http://www.google.ca",
+      "categories": [
+        "Web",
+        "Dev",
+        "Design"
+      ],
+      "technologies": [
+        "Wordpress",
+        "HTML",
+        "Css",
+        "Javascript - jQuery"
+      ],
+      "images": {
+        "featured_small": "https://source.unsplash.com/collection/370808/768x480",
+        "featured_big": "https://source.unsplash.com/collection/370808/1920x600",
+        "project_images":[
+          "https://source.unsplash.com/collection/370808/1024x768",
+          "https://source.unsplash.com/collection/370808/1280x768",
+          "https://source.unsplash.com/collection/370808/1024x768"
+        ]
+      }
+    },{
+      "title": "Project 9",
+      "slug": "project-9",
+      "date": 2013,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, commodi fuga magni maxime neque numquam pariatur quisquam repellat sed totam.",
+      "client": "The client",
+      "link": "http://www.google.ca",
+      "categories": [
+        "Web",
+        "Dev",
+        "Design"
+      ],
+      "technologies": [
+        "Wordpress",
+        "HTML",
+        "Css",
+        "Javascript - jQuery"
+      ],
+      "images": {
+        "featured_small": "https://source.unsplash.com/collection/338595/768x480",
+        "featured_big": "https://source.unsplash.com/collection/338595/1920x600",
+        "project_images":[
+          "https://source.unsplash.com/collection/338595/1024x768",
+          "https://source.unsplash.com/collection/338595/1280x768",
+          "https://source.unsplash.com/collection/338595/1024x768"
+        ]
+      }
+    }
+  ]
+}

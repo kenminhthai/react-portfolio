@@ -1,0 +1,22 @@
+// Footer
+
+.site-footer {
+  position: relative;
+  bottom: 0;
+  padding: 30px 0;
+  background: $dark;
+  background: linear-gradient(135deg, $color1, $color2 100%), url('/media/css-images/bg-image5.jpeg') no-repeat center fixed;
+  background-size: cover;
+  background-blend-mode: color;
+  color: $dark;
+  min-height: 300px;
+  text-transform: uppercase;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  width: 100%;
+}

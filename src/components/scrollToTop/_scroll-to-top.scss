@@ -1,0 +1,23 @@
+// Scroll To Top Component styles
+.scroll-to-top {
+  display: block;
+  background: transparent;
+  color: #fff;
+  background: $dark;
+  border: none;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  line-height: 30px;
+  font-size: 14px;
+  text-align: center;
+  margin: 20px auto;
+  cursor: pointer;
+  transition: all 300ms ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+
+}
