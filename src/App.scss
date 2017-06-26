@@ -241,7 +241,7 @@ body:not([data-page-type="Home"]) .section-wrapper__header {
   justify-content: center;
   flex-direction: column;
   //background: linear-gradient(135deg, $color1 0, $color3 100%);
-  background: linear-gradient(135deg, $color1 0, $color2 100%), url('/media/css-images/bg-image5.jpeg') no-repeat center fixed;
+  background: linear-gradient(135deg, $color1 0, $color2 100%), url('http://simonpatrat.com/react-portfolio/media/css-images/bg-image5.jpeg') no-repeat center fixed;
   background-size: cover;
   background-blend-mode: color;
 

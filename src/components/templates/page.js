@@ -9,7 +9,6 @@ class Page extends Component {
     }
 
     componentDidMount() {
-        document.body.setAttribute('data-page-type',this.constructor.name);
         window.scrollTo(0, 0);
         setTimeout(() => {
             this.setState({isMounted: true});

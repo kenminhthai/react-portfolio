@@ -10,6 +10,10 @@ import { intro, info, address } from '../../site-data/resume.json';
 
 class About extends Page {
 
+    componentDidMount() {
+        document.body.setAttribute('data-page-type', 'About');
+    }
+
     render() {
 
         let resumeTitleBlockHTML = () => {

@@ -17,6 +17,13 @@ class Portfolio extends Page {
         this.filterPortfolio = this.filterPortfolio.bind(this);
     }
 
+    componentDidMount() {
+        if ( !this.props.isEmbed ) {
+            document.body.setAttribute('data-page-type', 'Home');
+        }
+
+    }
+
 
     filterPortfolio(e) {
        let catName = e;

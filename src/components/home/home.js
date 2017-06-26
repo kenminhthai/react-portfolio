@@ -10,6 +10,11 @@ import Helmet from 'react-helmet';
 import portfolio from '../../site-data/portfolio.json';
 
 class Home extends Page {
+
+
+    componentDidMount() {
+        document.body.setAttribute('data-page-type', 'Home');
+    }
     
     render() {
         return (
