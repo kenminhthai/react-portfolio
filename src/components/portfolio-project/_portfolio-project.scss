@@ -3,9 +3,10 @@
   padding-bottom: 0;
   background: #fff;
   color: $dark;
+  margin-top: 75px;
 
-  body[data-theme="black-and-white"] & {
-    color: $dark;
+  @media (min-width: 1025px) {
+    margin-top: 0;
   }
 }
 

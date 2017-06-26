@@ -42,7 +42,10 @@ class App extends Component {
 
     handleWindowScroll() {
         window.addEventListener('scroll', function() {
-            if (document.body.scrollTop >= 70) {
+
+            const wTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+
+            if (wTop >= 70) {
                 document.querySelector('.App-header').classList.add('App-header--scrolled');
             } else {
                 document.querySelector('.App-header').classList.remove('App-header--scrolled');
