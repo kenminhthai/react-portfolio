@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
-
+import { BrowserRouter as Router, HashRouter , Route, Link, Switch } from 'react-router-dom';
 
 
 // Pages Components
@@ -56,7 +55,7 @@ class App extends Component {
     render() {
 
         return (
-            <Router>
+            <HashRouter basename="/react-portfolio/">
                 <div className="App">
                     <header className="App-header">
                         <div className="App-header__inner">
@@ -100,7 +99,7 @@ class App extends Component {
                     </main>
                     <Footer/>
                 </div>
-            </Router>
+            </HashRouter>
         );
     }
 
