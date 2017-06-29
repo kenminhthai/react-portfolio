@@ -1,6 +1,8 @@
 # React portfolio
 Simple React.js portfolio template
 
+[-> Demo](https://reio.herokuapp.com/)
+
 **This project uses [create-react-app from Facebook](https://github.com/facebookincubator/create-react-app)** 
 
 All site data is stored in json files in the src/site-data/ folder

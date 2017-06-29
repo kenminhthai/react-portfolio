@@ -63,7 +63,7 @@ class App extends Component {
                             <div className="container container--full-width">
                                 <div className="row">
                                     <Link to="/" className="App-logo" title="Home page">
-                                        <img src={logo} height={40} width={200} alt="Site logo"/>
+                                        <img src={logo} height={52} width={100} alt="Site logo"/>
                                     </Link>
                                     <Navigation/>
                                 </div>

@@ -80,26 +80,25 @@ ul {
 
 
 .App-logo {
-  //animation: App-logo-spin infinite 20s linear;
   display: block;
   float: left;
-  width: 200px;
-  height: 50px;
-  //margin-left: 10px;
+  width: 100px;
+  height: 56px;
   padding: 5px;
-  line-height: 40px;
+  line-height: 52px;
   background: $dark;
   transform: skew(-15deg);
   box-shadow: 0 3px 3px 0 rgba(0,0,0,0.5);
   transition: all 300ms ease;
   position: relative;
   z-index: 11;
+  text-align: center;
 
   img {
     display: inline-block;
     margin: auto;
-    max-width: 100%;
-    heigth: auto;
+    max-width: 90%;
+    height: auto;
   }
 
   &:hover {
