@@ -19,8 +19,12 @@ class Portfolio extends Page {
 
     componentDidMount() {
         if ( !this.props.isEmbed ) {
-            document.body.setAttribute('data-page-type', 'Home');
+            document.body.setAttribute('data-page-type', 'Portfolio');
         }
+        window.scrollTo(0, 0);
+        setTimeout(() => {
+            this.setState({isMounted: true});
+        }, 200);
 
     }
 

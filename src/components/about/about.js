@@ -12,6 +12,10 @@ class About extends Page {
 
     componentDidMount() {
         document.body.setAttribute('data-page-type', 'About');
+        window.scrollTo(0, 0);
+        setTimeout(() => {
+            this.setState({isMounted: true});
+        }, 200);
     }
 
     render() {

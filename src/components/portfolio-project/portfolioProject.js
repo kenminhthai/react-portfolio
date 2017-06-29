@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { Link } from 'react-router-dom';
 
 import Helmet from 'react-helmet';
 // Site data
@@ -124,9 +124,9 @@ class PortfolioProject extends Component {
                                                 'opacity': this.state.imgLoaded ? 1 : 0,
                                                 'transform': this.state.imgLoaded ? 'scale(1)' : 'scale(1.1)'
                                             }}/>
-                                        <a className="project-nav__link project-nav__link--prev"
+                                        <Link className="project-nav__link project-nav__link--prev"
                                            title={previousItemTitle}
-                                           href={previousItemLink}
+                                           to={previousItemLink}
                                            style={{
                                                'display': this.state.imgLoaded ? 'block' : 'none'
                                            }}>
@@ -139,10 +139,10 @@ class PortfolioProject extends Component {
                                                      width="100px"
                                                      height="100px"/>
                                             </div>
-                                        </a>
-                                        <a className="project-nav__link project-nav__link--next"
+                                        </Link>
+                                        <Link className="project-nav__link project-nav__link--next"
                                            title={nextItemTitle}
-                                           href={nextItemLink}
+                                           to={nextItemLink}
                                            style={{
                                                'display': this.state.imgLoaded ? 'block' : 'none'
                                            }}>
@@ -155,7 +155,7 @@ class PortfolioProject extends Component {
                                                      width="100px"
                                                      height="100px"/>
                                             </div>
-                                        </a>
+                                        </Link>
                                     </div>
 
                                 </div>
