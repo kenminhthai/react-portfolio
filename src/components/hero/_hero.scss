@@ -16,9 +16,13 @@
     bottom: 0;
     margin: auto;
     color: #fff;
-    background: linear-gradient(135deg, $color1 0, $color2 100%), url('/media/css-images/bg-image5.jpeg') no-repeat center fixed;
+    background: linear-gradient(135deg, $color1 0, $color2 100%), url('/media/css-images/bg-image5.jpeg') no-repeat center;
     background-size: cover;
     background-blend-mode: color;
+
+    @media (min-width: 1024px) {
+      background-attachment: fixed;
+    }
 
     &__title__group {
       position: absolute;
