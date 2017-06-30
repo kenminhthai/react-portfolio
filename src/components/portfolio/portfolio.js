@@ -4,6 +4,7 @@ import PortfolioListItem from '../portfolio-list-item/portfolioListItem';
 import PortfolioFilterListItem from '../portfolio-filter-list-item';
 import {Helmet} from 'react-helmet';
 import site from '../../site-data/site.json';
+import {Link} from 'react-router-dom';
 
 class Portfolio extends Page {
 
@@ -125,9 +126,9 @@ class Portfolio extends Page {
                     {
                         this.props.hasLinkButton ? (
                             <div className="text-center">
-                                <a href={this.props.linkButtonLink} className="btn portfolio__big-btn">
+                                <Link to={this.props.linkButtonLink} className="btn portfolio__big-btn">
                                     {this.props.linkButtonLabel}
-                                </a>
+                                </Link>
                             </div>
 
                         ) : null
