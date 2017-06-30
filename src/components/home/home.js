@@ -42,7 +42,7 @@ class Home extends Page {
                                itemsLimit={3}
                                theme={this.props.theme}
                                hasLinkButton={true}
-                               linkButtonLink="/portfolio"
+                               linkButtonLink="./portfolio"
                                linkButtonLabel="See more Projects"
                                isEmbed={true}/>
                 </div>
